@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PhotoButton from "./PhotoButton";
 
 class PhotoGrid extends Component {
     render() {
@@ -12,12 +13,7 @@ class PhotoGrid extends Component {
                             className="image"
                             style={{ width: "100%" }}
                         />
-                        <div className="overlay">
-                            {/* The button */}
-                            <button id="btn2013" className="overlay text">
-                                XIX Competição Baja SAE Brasil
-                </button>
-                        </div>
+                        <PhotoButton id="btn2013" text="XIX Competição Baja SAE Brasil" />
                     </div>
 
                     <div className="container">
@@ -27,12 +23,7 @@ class PhotoGrid extends Component {
                             className="image"
                             style={{ width: "100%" }}
                         />
-                        <div className="overlay">
-                            {/* The button */}
-                            <button id="btnWSU" className="overlay text">
-                                Wayne State University
-                </button>
-                        </div>
+                        <PhotoButton id="btnWSU" text="Wayne State University" />
                     </div>
 
                     <div className="container">
@@ -42,12 +33,7 @@ class PhotoGrid extends Component {
                             className="image"
                             style={{ width: "100%" }}
                         />
-                        <div className="overlay">
-                            {/* The button */}
-                            <button id="btn2016" className="overlay text">
-                                XXII Competição Baja SAE Brasil
-                </button>
-                        </div>
+                        <PhotoButton id="btn2016" text="XXII Competição Baja SAE Brasil" />
                     </div>
                 </div>
 
@@ -59,12 +45,7 @@ class PhotoGrid extends Component {
                             className="image"
                             style={{ width: "100%" }}
                         />
-                        <div className="overlay">
-                            {/* The button */}
-                            <button id="btn2014" className="overlay text">
-                                XX Competição Baja SAE Brasil
-                </button>
-                        </div>
+                        <PhotoButton id="btn2014" text="XX Competição Baja SAE Brasil" />
                     </div>
 
                     <div className="container">
@@ -74,12 +55,7 @@ class PhotoGrid extends Component {
                             className="image"
                             style={{ width: "100%" }}
                         />
-                        <div className="overlay">
-                            {/* The button */}
-                            <button id="btnMIT" className="overlay text">
-                                Massachusetts Institute of Technology
-                </button>
-                        </div>
+                        <PhotoButton id="btnMIT" text="Massachusetts Institute of Technology" />
                     </div>
 
                     <div className="container">
@@ -89,12 +65,7 @@ class PhotoGrid extends Component {
                             className="image"
                             style={{ width: "100%" }}
                         />
-                        <div className="overlay">
-                            {/* The button */}
-                            <button id="btnAresta" className="overlay text">
-                                Estágio na Aresta 3D
-                </button>
-                        </div>
+                        <PhotoButton id="btnAresta" text="Estágio na Aresta 3D" />
                     </div>
                 </div>
             </div>
