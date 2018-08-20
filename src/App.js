@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import SideBar from './components/SideBar'
 import HiddenSideBar from './components/HiddenSideBar'
-import PageContent from './components/PageContent'
+import PageContent from './components/content/PageContent'
 
 class App extends Component {
   constructor() {

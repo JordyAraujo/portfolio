@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Skills from './about/Skills'
-import ResumeDownload from './ResumeDownload';
+import Skills from '../skills/Skills'
+import ResumeDownload from '../ResumeDownload';
 
 class About extends Component {
     render() {

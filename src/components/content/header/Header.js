@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ResumeDownload from "./ResumeDownload";
+import ResumeDownload from "../ResumeDownload";
 
 class Header extends Component {
   render() {

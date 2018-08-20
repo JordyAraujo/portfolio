@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import OpenHiddenSideBar from './content/OpenHiddenSideBar'
-import Header from './content/Header'
-import About from './content/About'
-import Contact from './content/Contact';
-import Footer from './content/Footer';
-import Portfolio from './content/Portfolio';
+import OpenHiddenSideBar from './OpenHiddenSideBar'
+import Header from './header/Header'
+import About from './about/About'
+import Contact from './contact/Contact';
+import Footer from './footer/Footer';
+import Portfolio from './portfolio/Portfolio';
 
 class PageContent extends Component {
     render() {
