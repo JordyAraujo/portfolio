@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PhotoButton from "./PhotoButton";
+import "./PhotoGrid.css";
 
 class PhotoGrid extends Component {
     render() {
@@ -62,7 +63,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Aresta 3D"
                             src="https://jordyaraujo.github.io/static/media/aresta.jpg"
-                            className="image"
+                            className="image imgpb"
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btnAresta" text="Estágio na Aresta 3D" />
