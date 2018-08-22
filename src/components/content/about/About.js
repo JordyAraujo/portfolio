@@ -1,12 +1,6 @@
-<<<<<<< HEAD:src/components/content/about/About.js
-import React, { Component } from 'react'
-import Skills from '../skills/Skills'
-import ResumeDownload from '../ResumeDownload';
-=======
 import React, { Component } from "react";
-import Skills from "./about/Skills";
-import ResumeDownload from "./ResumeDownload";
->>>>>>> About update:src/components/content/About.js
+import Skills from "../skills/Skills";
+import ResumeDownload from "../ResumeDownload";
 
 class About extends Component {
   render() {
