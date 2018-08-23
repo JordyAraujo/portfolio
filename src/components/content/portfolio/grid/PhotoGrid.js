@@ -20,8 +20,8 @@ class PhotoGrid extends Component {
                     <div className="container">
                         <img
                             alt="Wayne State University"
-                            src="https://jordyaraujo.github.io/static/media/wsu.jpg"
-                            className="image"
+                            src="https://jordyaraujo.github.io/static/media/wsu-color.jpg"
+                            className="image imgpb"
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btnWSU" text="Wayne State University" />
@@ -52,8 +52,8 @@ class PhotoGrid extends Component {
                     <div className="container">
                         <img
                             alt="Massachusetts Institute Of Technology"
-                            src="https://jordyaraujo.github.io/static/media/mit.jpg"
-                            className="image"
+                            src="https://jordyaraujo.github.io/static/media/mit-color.jpg"
+                            className="image imgpb"
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btnMIT" text="Massachusetts Institute of Technology" />
@@ -62,7 +62,7 @@ class PhotoGrid extends Component {
                     <div className="container">
                         <img
                             alt="Aresta 3D"
-                            src="https://jordyaraujo.github.io/static/media/aresta.jpg"
+                            src="https://jordyaraujo.github.io/static/media/aresta-color.jpg"
                             className="image imgpb"
                             style={{ width: "100%" }}
                         />
