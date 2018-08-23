@@ -13,8 +13,9 @@ class App extends Component {
         display: "none",
         paddingTop: "150px",
         right: 0,
-        zIndex: 2
-      }
+        zIndex: 2,
+      },
+      imgColor: "imgpb"
     }
   }
 
@@ -50,12 +51,30 @@ class App extends Component {
     }
   }
 
+  handleEnter() {
+    this.setState({
+      ...this.state,
+      imgColor: "imgcolor"
+    })
+  }
+
+  handleLeave() {
+    this.setState({
+      ...this.state,
+      imgColor: "imgpb"
+    })
+  }
+
   render() {
     return (
 
       <React.Fragment>
 
-        <SideBar />
+        <SideBar
+          onEnter={() => this.handleEnter()}
+          onLeave={() => this.handleLeave()}
+          imgColor={this.state.imgColor}
+        />
 
         <HiddenSideBar
           styleHiddenSideBar={this.state.styleHiddenSideBar}

@@ -5,3 +5,13 @@
     background-image: url('https://jordyaraujo.github.io/static/media/profile.pb.png');
     min-height: 100%;
   }
+
+.imgpb {
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(1);
+}
+
+.imgcolor {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0);
+}
