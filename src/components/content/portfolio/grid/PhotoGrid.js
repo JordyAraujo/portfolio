@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import classnames from 'classnames';
 import PhotoButton from "./PhotoButton";
 import "./PhotoGrid.css";
 
@@ -11,7 +12,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Baja 2013"
                             src="https://jordyaraujo.github.io/static/media/baja.2013.jpg"
-                            className="image"
+                            className={classnames('image', this.props.imgColor)}
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btn2013" text="XIX Competição Baja SAE Brasil" />
@@ -21,7 +22,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Wayne State University"
                             src="https://jordyaraujo.github.io/static/media/wsu-color.jpg"
-                            className="image imgpb"
+                            className={classnames('image', this.props.imgColor)}
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btnWSU" text="Wayne State University" />
@@ -31,7 +32,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Baja 2016"
                             src="https://jordyaraujo.github.io/static/media/baja.2016.jpg"
-                            className="image"
+                            className={classnames('image', this.props.imgColor)}
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btn2016" text="XXII Competição Baja SAE Brasil" />
@@ -43,7 +44,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Baja 2014"
                             src="https://jordyaraujo.github.io/static/media/baja.2014.jpg"
-                            className="image"
+                            className={classnames('image', this.props.imgColor)}
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btn2014" text="XX Competição Baja SAE Brasil" />
@@ -53,7 +54,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Massachusetts Institute Of Technology"
                             src="https://jordyaraujo.github.io/static/media/mit-color.jpg"
-                            className="image imgpb"
+                            className={classnames('image', this.props.imgColor)}
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btnMIT" text="Massachusetts Institute of Technology" />
@@ -63,7 +64,7 @@ class PhotoGrid extends Component {
                         <img
                             alt="Aresta 3D"
                             src="https://jordyaraujo.github.io/static/media/aresta-color.jpg"
-                            className="image imgpb"
+                            className={classnames('image', this.props.imgColor)}
                             style={{ width: "100%" }}
                         />
                         <PhotoButton id="btnAresta" text="Estágio na Aresta 3D" />
