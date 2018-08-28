@@ -1,9 +1,9 @@
-.imgpb {
+img {
     -webkit-filter: grayscale(100%);
 	filter: grayscale(1);
 }
 
-.imgcolor {
+img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0);
 }

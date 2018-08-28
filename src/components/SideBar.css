@@ -6,12 +6,12 @@
     min-height: 100%;
   }
 
-.imgpb {
+nav {
     -webkit-filter: grayscale(100%);
 	filter: grayscale(1);
 }
 
-.imgcolor {
+nav:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0);
 }
