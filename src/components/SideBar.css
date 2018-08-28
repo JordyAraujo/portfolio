@@ -9,8 +9,8 @@
 nav {
     -webkit-filter: grayscale(100%);
     filter: grayscale(1);
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 nav:hover {
