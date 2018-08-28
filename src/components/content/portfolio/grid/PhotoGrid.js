@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import PhotoButton from "./PhotoButton";
-import ImgLoader from "./ImgLoader";
+import "./PhotoGrid.css";
 
 class PhotoGrid extends Component {
   render() {
@@ -8,56 +7,84 @@ class PhotoGrid extends Component {
       <div className="w3-row-padding" style={{ margin: "0 -16px" }}>
         <div className="w3-half">
           <div className="container">
-            <ImgLoader
-              imgSrc="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/baja2013.jpg"
-              imgAlt="Baja 2013"
+            <button
+              id="btn2013"
+              text="XIX Competição Baja SAE Brasil"
+              className="overlay text"
+              style={{ cursor: "pointer" }}
             />
-            <PhotoButton id="btn2013" text="XIX Competição Baja SAE Brasil" />
+            <img
+              src="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/baja2013.jpg"
+              alt="Baja 2013"
+              style={{ width: "100%" }}
+            />
           </div>
 
           <div className="container">
-            <ImgLoader
-              imgSrc="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/wsu.jpg"
-              imgAlt="Wayne State University"
+            <button
+              id="btnWSU"
+              text="Wayne State University"
+              className="overlay text"
             />
-            <PhotoButton id="btnWSU" text="Wayne State University" />
+            <img
+              src="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/wsu.jpg"
+              alt="Wayne State University"
+              style={{ width: "100%" }}
+            />
           </div>
 
           <div className="container">
-            <ImgLoader
-              imgSrc="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/baja2016.jpg"
-              imgAlt="Baja 2016"
+            <button
+              id="btn2016"
+              text="XXII Competição Baja SAE Brasil"
+              className="overlay text"
             />
-            <PhotoButton id="btn2016" text="XXII Competição Baja SAE Brasil" />
+            <img
+              src="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/baja2016.jpg"
+              alt="Baja 2016"
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
 
         <div className="w3-half">
           <div className="container">
-            <ImgLoader
-              imgSrc="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/baja2014.jpg"
-              imgAlt="Baja 2014"
+            <button
+              id="btn2014"
+              text="XX Competição Baja SAE Brasil"
+              className="overlay text"
             />
-            <PhotoButton id="btn2014" text="XX Competição Baja SAE Brasil" />
+            <img
+              src="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/baja2014.jpg"
+              alt="Baja 2014"
+              style={{ width: "100%" }}
+            />
           </div>
 
           <div className="container">
-            <ImgLoader
-              imgSrc="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/mit.jpg"
-              imgAlt="Massachusetts Institute Of Technology"
-            />
-            <PhotoButton
+            <button
               id="btnMIT"
               text="Massachusetts Institute of Technology"
+              className="overlay text"
+            />
+            <img
+              src="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/mit.jpg"
+              alt="Massachusetts Institute Of Technology"
+              style={{ width: "100%" }}
             />
           </div>
 
           <div className="container">
-            <ImgLoader
-              imgSrc="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/aresta.jpg"
-              imgAlt="Aresta 3D"
+            <button
+              id="btnAresta"
+              text="Estágio na Aresta 3D"
+              className="overlay text"
             />
-            <PhotoButton id="btnAresta" text="Estágio na Aresta 3D" />
+            <img
+              src="https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/aresta.jpg"
+              alt="Aresta 3D"
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
       </div>
