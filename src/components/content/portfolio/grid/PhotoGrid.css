@@ -3,6 +3,8 @@ img {
     filter: grayscale(1);
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    width: 100%;
+    cursor: pointer;
 }
 
 img:hover {
