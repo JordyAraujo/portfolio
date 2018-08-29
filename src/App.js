@@ -3,49 +3,32 @@ import "./App.css";
 import SideBar from "./components/SideBar";
 import HiddenSideBar from "./components/HiddenSideBar";
 import PageContent from "./components/content/PageContent";
+import './components/content/portfolio/grid/Modal.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      styleHiddenSideBar: {
-        width: "60%",
-        display: "none",
-        paddingTop: "150px",
-        right: 0,
-        zIndex: 2
-      }
+      displayHiddenSideBar: 'none'
     };
   }
 
   handleClickCloseNav() {
-    const display = this.state.styleHiddenSideBar.display;
+    const display = this.state.displayHiddenSideBar;
     if (display === "block") {
       this.setState({
         ...this.state,
-        styleHiddenSideBar: {
-          width: "60%",
-          display: "none",
-          paddingTop: "150px",
-          right: 0,
-          zIndex: 2
-        }
+        displayHiddenSideBar: 'none'
       });
     }
   }
 
   handleClickOpenNav() {
-    const display = this.state.styleHiddenSideBar.display;
+    const display = this.state.displayHiddenSideBar;
     if (display === "none") {
       this.setState({
         ...this.state,
-        styleHiddenSideBar: {
-          width: "60%",
-          display: "block",
-          paddingTop: "150px",
-          right: 0,
-          zIndex: 2
-        }
+        displayHiddenSideBar: 'block'
       });
     }
   }
@@ -53,14 +36,16 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        
         <SideBar imgColor={this.state.imgColor} />
-
+        
         <HiddenSideBar
-          styleHiddenSideBar={this.state.styleHiddenSideBar}
+          displayHiddenSideBar={this.state.displayHiddenSideBar}
           onClickCloseNav={() => this.handleClickCloseNav()}
-        />
+        />      
 
         <PageContent onClickOpenNav={() => this.handleClickOpenNav()} />
+        
       </React.Fragment>
     );
   }
