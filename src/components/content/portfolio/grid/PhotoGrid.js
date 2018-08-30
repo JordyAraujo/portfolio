@@ -32,6 +32,14 @@ class PhotoGrid extends Component {
                                 onClick={this.props.onClickBaja2016}
                             />
                         </div>
+
+                        <div className='container'>
+                            <img
+                                src='https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/img/cpNatal.jpg'
+                                alt='Campus Party Natal'
+                                onClick={this.props.onClickcpNatal}
+                            />
+                        </div>
                     </div>
 
                     <div className='w3-half'>
@@ -62,12 +70,12 @@ class PhotoGrid extends Component {
                 </div>
                 <Modal
                     title = 'XIX Competição Baja SAE Brasil'
-                    content = "Como competidor novato na Equipe Car-Kará de Baja SAE, cumpri as funções de fabricação e manutenção exigidas pela equipe.
+                    content = 'Como competidor novato na Equipe Car-Kará de Baja SAE, cumpri as funções de fabricação e manutenção exigidas pela equipe.
                     Foi um grande marco no meu aprendizado, quando começou meu contato com a indústria e com o mundo maker. O contato
                     com as competições Baja SAE, que visam simular o funcionamento de uma pequena empresa projetista e fabricante de
                     um protótipo para apresentação no mercado, me tornou um profissional mais completo, uma vez que pude experimentar
-                    o trabalho em equipe em todas as suas formas. Da parte de projeto técnico ao 'chão de fábrica', com fabricação e
-                    resolução de problemas, muitas vezes sobre pressão."
+                    o trabalho em equipe em todas as suas formas. Da parte de projeto técnico ao "chão de fábrica", com fabricação e
+                    resolução de problemas, muitas vezes sobre pressão.'
                     display = {this.props.modalBaja2013}
                     onClickClose = {this.props.onClickClose}
                 />
@@ -132,6 +140,12 @@ class PhotoGrid extends Component {
                     de tecnologia disruptiva e poder acompanhar de perto a entrada no mercado de uma nova ideia tecnológica desconhecida
                     pela maioria da população.'
                     display = {this.props.modalAresta}
+                    onClickClose = {this.props.onClickClose}
+                />
+                <Modal
+                    title = 'Campus Party Natal'
+                    content = 'Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste'
+                    display = {this.props.modalcpNatal}
                     onClickClose = {this.props.onClickClose}
                 />
                 </React.Fragment>

@@ -13,6 +13,7 @@ class Portfolio extends Component {
       modalMIT: 'none',
       modalWSU: 'none',
       modalAresta: 'none',
+      modalcpNatal: 'none',
       isOpen: false
     };
   }
@@ -83,6 +84,17 @@ class Portfolio extends Component {
     }
   }
 
+  handleClickcpNatal(){
+    const displaycpNatal = this.state.modalcpNatal;
+    if (displaycpNatal === "none") {
+      this.setState({
+        ...this.state,
+        modalcpNatal: 'block',
+        isOpen: true
+      });
+    }
+  }
+
   handleClickCloseModal() {
     const isOpen = this.state.isOpen;
     if (isOpen === true) {
@@ -93,6 +105,7 @@ class Portfolio extends Component {
       modalMIT: 'none',
       modalWSU: 'none',
       modalAresta: 'none',
+      modalcpNatal: 'none',
       isOpen: false
       });
     }
@@ -110,12 +123,14 @@ class Portfolio extends Component {
           modalMIT={this.state.modalMIT}
           modalWSU={this.state.modalWSU}
           modalAresta={this.state.modalAresta}
+          modalcpNatal={this.state.modalcpNatal}
           onClickBaja2013={() => this.handleClickBaja2013()}
           onClickBaja2014={() => this.handleClickBaja2014()}
           onClickBaja2016={() => this.handleClickBaja2016()}
           onClickMIT={() => this.handleClickMIT()}
           onClickWSU={() => this.handleClickWSU()}
           onClickAresta={() => this.handleClickAresta()}
+          onClickcpNatal={() => this.handleClickcpNatal()}
           onClickClose={() => this.handleClickCloseModal()}
         />
       </div>
