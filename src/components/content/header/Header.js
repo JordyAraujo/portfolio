@@ -13,19 +13,6 @@ class Header extends Component {
           <b>Jordy Araújo</b>
         </h1>
         <p>Professional Maker</p>
-        <img
-          alt="Profile"
-          src="https://jordyaraujo.github.io/static/media/profile.pb.png"
-          className="w3-image w3-hide-large w3-hide-small w3-round"
-          style={{ display: "block", width: "60%", margin: "auto" }}
-        />
-        <img
-          alt="Profile"
-          src="https://jordyaraujo.github.io/static/media/profile.pb.png"
-          className="w3-image w3-hide-large w3-hide-medium w3-round"
-          width="1000"
-          height="1333"
-        />
 
         <ResumeDownload />
       </header>
