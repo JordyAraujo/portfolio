@@ -144,7 +144,12 @@ class PhotoGrid extends Component {
                 />
                 <Modal
                     title = 'Campus Party Natal'
-                    content = 'Teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste testeTeste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste'
+                    content = 'Em 2018 tive o prazer incomensurável de trabalhar na equipe Institucional de voluntários da Campus Party Natal, onde
+                    fiquei encarregado do registro fotográfico, acompanhamento e assessoria de parceiros institucionais e autoridades do governo.
+                    Tive a honra de me integrar do funcionanemto de um evento de tão grande porte, acompanhando o gerenciamento dos encontros institucionais
+                    com autoridades e participando de momentos decisivos para o planejamento de futuras edições.
+                    O aprendizado que tive se estendeu muito além dos meus papéis primários, e me sinto um profissional muito mais capacitado com o conhecimento
+                    adquirido.'
                     display = {this.props.modalcpNatal}
                     onClickClose = {this.props.onClickClose}
                 />
