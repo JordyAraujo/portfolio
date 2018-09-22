@@ -4,123 +4,30 @@ import SideBar from "./components/SideBar";
 import HiddenSideBar from "./components/HiddenSideBar";
 import PageContent from "./components/content/PageContent";
 import "./components/content/portfolio/grid/Modal.css";
-import axios from "axios";
-
-const langPT = "./lang/pt-br.json";
-const langEN =
-  "https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/lang/en-us.json";
+import dataPT from "./lang/pt-br.json";
+import dataEN from "./lang/en-us.json";
 
 class App extends Component {
-  /* loadData() {
-    if (this.state.lang === "pt") {
-      fetch(langPT)
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            ...this.state,
-            data: data
-          });
-        });
-    } else {
-      fetch(langEN)
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            ...this.state,
-            data: data
-          });
-        });
-    }
-  } */
-
   constructor() {
     super();
+    const data = null;
     this.state = {
       displayHiddenSideBar: "none",
-      data: {
-        hiddenSideBar: {
-          content1: null,
-          content2: null,
-          content3: null,
-          content4: null
-        },
-        resumeDownload: {
-          title: null
-        },
-        portfolio: {
-          title: null
-        },
-        header: {
-          title: null,
-          content: null
-        },
-        contact: {
-          title: null,
-          content1: null,
-          content2: null,
-          content3: null
-        },
-        skills: {
-          title: null,
-          content1: null,
-          content2: null,
-          content3: null,
-          content4: null
-        },
-        about: {
-          title: null,
-          content: null
-        },
-        modals: {
-          baja2013: {
-            title: null,
-            content: null
-          },
-          baja2014: {
-            title: null,
-            content: null
-          },
-          baja2016: {
-            title: null,
-            content: null
-          },
-          mit: {
-            title: null,
-            content: null
-          },
-          wsu: {
-            title: null,
-            content: null
-          },
-          aresta: {
-            title: null,
-            content: null
-          },
-          cpNatal: {
-            title: null,
-            content: null
-          }
-        }
-      },
-      lang: "pt",
-      error: null
+      data: dataPT,
+      lang: "pt"
     };
   }
 
-  async componentDidMount() {
-    try {
-      const result = await axios.get(langPT);
-      console.log(result.data);
-
+  componentDidMount() {
+    if (this.state.lang == "pt") {
       this.setState({
         ...this.state,
-        data: result.data
+        data: dataPT
       });
-      console.log(this.state.data);
-    } catch (error) {
+    } else {
       this.setState({
         ...this.state,
-        error
+        data: dataEN
       });
     }
   }
@@ -144,6 +51,19 @@ class App extends Component {
       });
     }
   }
+  handleClickLang() {
+    if (this.state.lang == "pt") {
+      this.setState({
+        ...this.state,
+        lang: "en"
+      });
+    } else {
+      this.setState({
+        ...this.state,
+        lang: "pt"
+      });
+    }
+  }
 
   render() {
     return (
@@ -155,7 +75,10 @@ class App extends Component {
           onClickCloseNav={() => this.handleClickCloseNav()}
         />
 
-        <PageContent onClickOpenNav={() => this.handleClickOpenNav()} />
+        <PageContent
+          onClickOpenNav={() => this.handleClickOpenNav()}
+          onClickLang={() => this.handleClickLang()}
+        />
       </React.Fragment>
     );
   }
