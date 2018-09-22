@@ -38,22 +38,86 @@ class App extends Component {
     super();
     this.state = {
       displayHiddenSideBar: "none",
-      hits: {},
+      data: {
+        hiddenSideBar: {
+          content1: null,
+          content2: null,
+          content3: null,
+          content4: null
+        },
+        resumeDownload: {
+          title: null
+        },
+        portfolio: {
+          title: null
+        },
+        header: {
+          title: null,
+          content: null
+        },
+        contact: {
+          title: null,
+          content1: null,
+          content2: null,
+          content3: null
+        },
+        skills: {
+          title: null,
+          content1: null,
+          content2: null,
+          content3: null,
+          content4: null
+        },
+        about: {
+          title: null,
+          content: null
+        },
+        modals: {
+          baja2013: {
+            title: null,
+            content: null
+          },
+          baja2014: {
+            title: null,
+            content: null
+          },
+          baja2016: {
+            title: null,
+            content: null
+          },
+          mit: {
+            title: null,
+            content: null
+          },
+          wsu: {
+            title: null,
+            content: null
+          },
+          aresta: {
+            title: null,
+            content: null
+          },
+          cpNatal: {
+            title: null,
+            content: null
+          }
+        }
+      },
       lang: "pt",
       error: null
     };
   }
 
   async componentDidMount() {
-    this.setState({ isLoading: true });
-
     try {
       const result = await axios.get(langPT);
+      console.log(result.data);
 
       this.setState({
         ...this.state,
-        hits: result.data.hits
+        data: result.data
       });
+      console.log(this.state.data);
     } catch (error) {
       this.setState({
         ...this.state,
@@ -86,9 +150,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <SideBar imgColor={this.state.imgColor} />
-
         <HiddenSideBar
-          data={this.state.hits}
+          data={this.state.data}
           displayHiddenSideBar={this.state.displayHiddenSideBar}
           onClickCloseNav={() => this.handleClickCloseNav()}
         />
