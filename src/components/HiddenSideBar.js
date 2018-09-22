@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./HiddenSideBar.css";
 
 class HiddenSideBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { data: props.data };
+  }
   render() {
     return (
       <nav

@@ -6,8 +6,7 @@ import PageContent from "./components/content/PageContent";
 import "./components/content/portfolio/grid/Modal.css";
 import axios from "axios";
 
-const langPT =
-  "https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/lang/pt-br.json";
+const langPT = "./lang/pt-br.json";
 const langEN =
   "https://raw.githubusercontent.com/JordyAraujo/portfolio/master/src/lang/en-us.json";
 
