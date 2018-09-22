@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import './HiddenSideBar.css';
+import "./HiddenSideBar.css";
 
 class HiddenSideBar extends Component {
   render() {
     return (
       <nav
         className="hiddenSideBar w3-sidebar w3-black w3-animate-right w3-xxlarge"
-        style={{ display: this.props.displayHiddenSideBar}}
+        style={{ display: this.props.displayHiddenSideBar }}
         id="mySidebar"
       >
         <span
@@ -22,7 +22,7 @@ class HiddenSideBar extends Component {
             className="w3-bar-item w3-button w3-text-grey w3-hover-black"
             onClick={this.props.onClickCloseNav}
           >
-            Início
+            {this.props.data.hiddenSideBar.content1}
           </a>
           <a
             href="#about"

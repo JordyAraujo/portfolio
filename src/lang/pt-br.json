@@ -1,11 +1,11 @@
 {
-  "hidden-side-bar": {
-    "content-1": "Início",
-    "content-2": "Sobre",
-    "content-3": "Portfólio",
-    "content-4": "Contato"
+  "hiddenSideBar": {
+    "content1": "Início",
+    "content2": "Sobre",
+    "content3": "Portfólio",
+    "content4": "Contato"
   },
-  "resume-download": {
+  "resumeDownload": {
     "title": " Baixar Currículo"
   },
   "portfolio": {
@@ -17,16 +17,16 @@
   },
   "contact":{
     "title": "Contato",
-    "content-1": " Natal/RN",
-    "content-2": " +55 84 99859-0725",
-    "content-3": " jordyaraujo@outlook.com"
+    "content1": " Natal/RN",
+    "content2": " +55 84 99859-0725",
+    "content3": " jordyaraujo@outlook.com"
   },
   "skills":{
     "title": "Minhas Habilidades",
-    "content-1": "Impressão/Modelagem 3D",
-    "content-2": "Fabricação Mecânica",
-    "content-3": "Programação",
-    "content-4": "Eletrônica e Robótica"
+    "content1": "Impressão/Modelagem 3D",
+    "content2": "Fabricação Mecânica",
+    "content3": "Programação",
+    "content4": "Eletrônica e Robótica"
   },
   "about":{
     "title": "Sobre",
@@ -44,7 +44,7 @@
     equipamento relacionado."
   },
   "modals": {
-    "baja-2013": {
+    "baja2013": {
       "title": "XIX Competição Baja SAE Brasil",
       "content": "Como competidor novato na Equipe Car-Kará de Baja SAE, cumpri as funções de fabricação e manutenção exigidas pela equipe.
             Foi um grande marco no meu aprendizado, quando começou meu contato com a indústria e com o mundo maker. O contato
@@ -53,7 +53,7 @@
             o trabalho em equipe em todas as suas formas. Da parte de projeto técnico ao 'chão de fábrica', com fabricação e
             resolução de problemas, muitas vezes sobre pressão."
     },
-    "baja-2014": {
+    "baja2014": {
       "title": "XX Competição Baja SAE Brasil",
       "content": "No ano seguinte ganhei mais responsabilidades na Equipe. Organizei e coordenei a seleção dos novos integrantes, bem
       como participei ativamente do treinamento inicial dos mesmos. Logo depois subi de posição na Equipe, passando a ser
@@ -64,7 +64,7 @@
       e temperatura do motor. O módulo também possuía uma fileira de LEDs que demonstravam de forma quantitativa os giros
       do motor."
     },
-    "baja-2016": {
+    "baja2016": {
       "title": "XXII Competição Baja SAE Brasil",
       "content": "De volta ao Brasil após o Programa, voltei à minha antiga Equipe, já como coordenador de Design e Estrutura. Uma área
       completamente nova pra mim e que me teve muito a adicionar. Tive a oportunidade de estudar e principalmente praticar
@@ -106,7 +106,7 @@
       de tecnologia disruptiva e poder acompanhar de perto a entrada no mercado de uma nova ideia tecnológica desconhecida
       pela maioria da população."
     },
-    "cp-natal": {
+    "cpNatal": {
       "title": "Campus Party Natal",
       "content": "Em 2018 tive o prazer incomensurável de trabalhar na equipe Institucional de voluntários da Campus Party Natal, onde
       fiquei encarregado do registro fotográfico, acompanhamento e assessoria de parceiros institucionais e autoridades do governo.
